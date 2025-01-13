@@ -3,7 +3,51 @@ Aligned Bible Corpus Data
 
 Mapping/aligning different Bible editions, variants, corpora and apparatuses.
 
-`greek.tsv` columns
+
+`hebrew.csv` columns
+--------------------
+
+This is the main file for comparing Hebrew editions.
+
+- **Ref**: Book/Chapter/Verse reference, using USFM book names
+- **Idx**: Line index (values above 80 are lines added to TAHOT, rest is filled with consecutive values)
+- **Hebrew**: Hebrew word from TAHOT
+- **TAHOT:Idx**: Line index from TAHOT
+- **TAHOT:RefSuffix**: Reference suffix from TAGNT (e.g. different verse number)
+- **TAHOT:Type**: Text type from TAHOT
+- **TAHOT:dStrongs**: Strongs number from TAHOT
+- **TAHOT:Grammar**: Grammar information from TAHOT
+- **TAHOT:RootStrongs**: Strongs numbers of root from TAHOT
+- **OSHB:Idx**: Index of this word in OSHB
+- **OSHB:Hebrew**: Hebrew word from OSHB if different from main Hebrew word (compared in normalized form)
+- **OSHB:Strong**: Strongs number from OSHB
+- **OSHB:Morph**: Morphology information from OSHB
+- **OSHB:FullHebrew**:Hebrew word from OSHB, even when same as main Hebrew word
+- **LHB:Idx**:  Index of this word in LEB
+- **LHB:Hebrew**: Hebrew word from LEB if different from main Hebrew word (compared in normalized form)
+- **UHB:Idx**:  Index of this word in UHB
+- **UHB:Hebrew**: Hebrew word from UHB if different from main Hebrew word (compared in normalized form)
+- **UHB:Strong**: Strongs number from UHB
+- **UHB:Morph**: Morphology information from UHB
+- **UHB:Lemma**: Lemma from UHB
+
+`hebrew_mini.csv` columns
+-------------------------
+
+Smaller file containing the bare minimum of columns needed to map between different Bible editions. This file is redundant.
+
+- **Ref**: Book/Chapter/Verse reference, using USFM book names
+- **Idx**: Line index (values above 80 are lines added to TAHOT, rest is filled with consecutive values)
+- **Hebrew**: Hebrew word from TAHOT
+- **OSHB:Idx**: Index of this word in OSHB
+- **OSHB:Hebrew**: Hebrew word from OSHB if different from main Hebrew word (compared in normalized form)
+- **LHB:Idx**:  Index of this word in LEB
+- **LHB:Hebrew**: Hebrew word from LEB if different from main Hebrew word (compared in normalized form)
+- **UHB:Idx**:  Index of this word in UHB
+- **UHB:Hebrew**: Hebrew word from UHB if different from main Hebrew word (compared in normalized form)
+
+
+`greek.csv` columns
 -------------------
 
 This is the main file for comparing Greek editions.
@@ -45,7 +89,7 @@ This is the main file for comparing Greek editions.
  - **SemDic:MeaningID**: Meaning ID(s) from Semantic Dictionary
  - **SemDic:LouwNida**: Louw Nida Number(s) from Semantic Dictionary
 
-`greek_mini.tsv` columns
+`greek_mini.csv` columns
 ------------------------
 
 Smaller file containing the bare minimum of columns needed to map between different Bible editions. This file is redundant.
@@ -62,7 +106,7 @@ Smaller file containing the bare minimum of columns needed to map between differ
  - **RP05:Greek**: Greek word from RP05 if different from main Greek word (compared in normalized form)
 
 
-`na28+ubs4.tsv` columns
+`na28+ubs4.csv` columns
 -----------------------
 
 Extracted to a separate file since those editions are not Creative Commons licensed. Lines are only included in this file if words exist in either NA28 or UBS4.
@@ -76,7 +120,7 @@ Extracted to a separate file since those editions are not Creative Commons licen
  - **UBS4:Greek**: Greek word from UBS4 if different from main Greek word (compared in normalized form)
 
 
-`greekstrongs.tsv` columns
+`greekstrongs.csv` columns
 --------------------------
 
 Data derived from Strongs dictionary, by Strongs number instead of by word reference. A lot smaller that way.
@@ -121,3 +165,15 @@ Greek
 - **[The New Testament in the original Greek: Byzantine textform](https://github.com/byztxt/byzantine-majority-text/tree/b844fff9cac3e5788504652d50802b94808b5905)**
 
   This is free and unencumbered software released into the public domain.
+
+
+Hebrew
+------
+
+- **[Open Scriptures Hebrew Bible](https://github.com/openscriptures/morphhb/commit/3d15126fb1ef74867fc1434be1942e837932691f)**
+
+  License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+- **[unfoldingWord® Hebrew Bible](https://git.door43.org/unfoldingWord/hbo_uhb/src/commit/0231ffdfea1ec5a3061e19fcf5f58943007aeb9d)**
+
+  This work is made available under the Creative Commons Attribution-ShareAlike 4.0 International License.
