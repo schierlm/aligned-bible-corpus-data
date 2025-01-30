@@ -88,6 +88,8 @@ This is the main file for comparing Greek editions.
  - **SemDic:Strongs**: Strongs number(s) from Semantic Dictionary
  - **SemDic:MeaningID**: Meaning ID(s) from Semantic Dictionary
  - **SemDic:LouwNida**: Louw Nida Number(s) from Semantic Dictionary
+ - **SBLGNT+App:Idx**: Index of this word in either SBLGNT or its apparatus (starting at 70)
+ - **SBLGNT-App:Idx**: Indexes of this word (variation group `:` Greek word) in the SBLGNT apparatus
 
 `greek_mini.csv` columns
 ------------------------
@@ -104,6 +106,8 @@ Smaller file containing the bare minimum of columns needed to map between differ
  - **SBLGNT:Greek**: Greek word from SBLGNT if different from main Greek word (compared in normalized form)
  - **RP05:Idx**: Actual index of this word in RP05
  - **RP05:Greek**: Greek word from RP05 if different from main Greek word (compared in normalized form)
+ - **SBLGNT+App:Idx**: Index of this word in either SBLGNT or its apparatus (starting at 70)
+ - **SBLGNT-App:Idx**: Indexes of this word (variation group `:` Greek word) in the SBLGNT apparatus
 
 
 `na28+ubs4.csv` columns
@@ -130,6 +134,25 @@ Data derived from Strongs dictionary, by Strongs number instead of by word refer
  - **Strongs:Origin**: Origin (Greek or Hebrew) Strongs number(s)
  - **Strongs:Root**: Greek Root Strongs Number(s)
  - **Strongs:RootLemma**: Lemma(s) associated with those Strongs Numbers
+
+
+`sblgnt-apparatus.csv` columns
+------------------------------
+
+Data derived from SBLGNT's apparatus.
+
+ - **Ref**: Book/Chapter/Verse reference, using USFM book names
+ - **Idx**: Number of variation group `:` Number of greek word in variation group.
+   Possible additions `(1)` denote parts of that word, or `(+)` joined with next word.
+ - **Greek**: Greek word
+ - **Editions**: Editions this greek word is included. `+` or `-` are used to record discrepancies from original document.
+ - **TAGNT-Idx**: Corresponding line in `greek.csv`, if unambiguous
+ - **SBL:Idx**: Index of word in SBLGNT
+ - **SBL:TAGNT-Idx**:  Corresponsing line in `greek.csv` for SBLGNT
+ - **NA28:Idx**: Index of word in NA28
+ - **NA28:TAGNT-Idx**: Corresponsing line in `greek.csv` for NA28
+ - **RP05:Idx**: Index of word in RP05
+ - **RP05:TAGNT-Idx**: Corresponsing line in `greek.csv` for RP05
 
 
 Sources and their licenses
