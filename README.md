@@ -88,6 +88,10 @@ This is the main file for comparing Greek editions.
  - **SemDic:Strongs**: Strongs number(s) from Semantic Dictionary
  - **SemDic:MeaningID**: Meaning ID(s) from Semantic Dictionary
  - **SemDic:LouwNida**: Louw Nida Number(s) from Semantic Dictionary
+ - **RP18:Idx**: Actual index of this word in RP18
+ - **RP18:Greek**: Greek word from RP18 if different from main Greek word (compared in normalized form)
+ - **RP18:Strongs**: Strongs number from RP18
+ - **RP18:Morph**: Morphology from RP18
  - **SBLGNT+App:Idx**: Index of this word in either SBLGNT or its apparatus (starting at 70)
  - **SBLGNT-App:Idx**: Indexes of this word (variation group `:` Greek word) in the SBLGNT apparatus
 
@@ -106,6 +110,8 @@ Smaller file containing the bare minimum of columns needed to map between differ
  - **SBLGNT:Greek**: Greek word from SBLGNT if different from main Greek word (compared in normalized form)
  - **RP05:Idx**: Actual index of this word in RP05
  - **RP05:Greek**: Greek word from RP05 if different from main Greek word (compared in normalized form)
+ - **RP18:Idx**: Actual index of this word in RP18
+ - **RP18:Greek**: Greek word from RP18 if different from main Greek word (compared in normalized form)
  - **SBLGNT+App:Idx**: Index of this word in either SBLGNT or its apparatus (starting at 70)
  - **SBLGNT-App:Idx**: Indexes of this word (variation group `:` Greek word) in the SBLGNT apparatus
 
