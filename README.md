@@ -94,6 +94,11 @@ This is the main file for comparing Greek editions.
  - **RP18:Morph**: Morphology from RP18
  - **SBLGNT+App:Idx**: Index of this word in either SBLGNT or its apparatus (starting at 70)
  - **SBLGNT-App:Idx**: Indexes of this word (variation group `:` Greek word) in the SBLGNT apparatus
+ - **UGNT:Idx**: Actual index of this word in UGNT
+ - **UGNT:Greek**: Greek word from UGNT if different from main Greek word (compared in normalized form)
+ - **UGNT:Strongs**: Strongs number from UGNT
+ - **UGNT:Morph**: Morphology from UGNT
+ - **UGNT:Lemma**: Morphology from UGNT
 
 `greek_mini.csv` columns
 ------------------------
@@ -114,6 +119,8 @@ Smaller file containing the bare minimum of columns needed to map between differ
  - **RP18:Greek**: Greek word from RP18 if different from main Greek word (compared in normalized form)
  - **SBLGNT+App:Idx**: Index of this word in either SBLGNT or its apparatus (starting at 70)
  - **SBLGNT-App:Idx**: Indexes of this word (variation group `:` Greek word) in the SBLGNT apparatus
+ - **UGNT:Idx**: Actual index of this word in UGNT
+ - **UGNT:Greek**: Greek word from UGNT if different from main Greek word (compared in normalized form)
 
 
 `na28+ubs4.csv` columns
@@ -190,6 +197,10 @@ Greek
 - **[MorphGNT SBLGNT](https://github.com/morphgnt/sblgnt/tree/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d)**
 
   The SBLGNT text itself is subject to the SBLGNT EULA and the morphological parsing and lemmatization is made available under a CC-BY-SA 3.0 License.
+
+- **[unfoldingWord® Greek New Testament](https://git.door43.org/unfoldingWord/el-x-koine_ugnt/src/commit/fc95b2b8aad08bb65ab54628ab685413a1139e97)**
+
+  This work is made available under the Creative Commons Attribution-ShareAlike 4.0 International License.
 
 - **[The New Testament in the original Greek: Byzantine textform](https://github.com/byztxt/byzantine-majority-text/tree/b844fff9cac3e5788504652d50802b94808b5905)**
 
