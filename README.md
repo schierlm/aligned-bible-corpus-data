@@ -30,6 +30,9 @@ This is the main file for comparing Hebrew editions.
 - **UHB:Strong**: Strongs number from UHB
 - **UHB:Morph**: Morphology information from UHB
 - **UHB:Lemma**: Lemma from UHB
+- **UXLC:Idx**:  Index of this word in UXLC
+- **UXLC:Hebrew**: Hebrew word from UXLC if different from main Hebrew word (compared in normalized form)
+- **DocumentaryHypothesis**: Documentary hypothesis tagging of the Pentateuch according to UXLC
 
 `hebrew_mini.csv` columns
 -------------------------
@@ -45,6 +48,8 @@ Smaller file containing the bare minimum of columns needed to map between differ
 - **LHB:Hebrew**: Hebrew word from LEB if different from main Hebrew word (compared in normalized form)
 - **UHB:Idx**:  Index of this word in UHB
 - **UHB:Hebrew**: Hebrew word from UHB if different from main Hebrew word (compared in normalized form)
+- **UXLC:Idx**:  Index of this word in UXLC
+- **UXLC:Hebrew**: Hebrew word from UXLC if different from main Hebrew word (compared in normalized form)
 
 
 `greek.csv` columns
@@ -217,3 +222,7 @@ Hebrew
 - **[unfoldingWord® Hebrew Bible](https://git.door43.org/unfoldingWord/hbo_uhb/src/commit/0231ffdfea1ec5a3061e19fcf5f58943007aeb9d)**
 
   This work is made available under the Creative Commons Attribution-ShareAlike 4.0 International License.
+
+- **[Unicode/XML Leningrad Codex](https://www.tanach.us/Pages/XMLFiles.html)**
+
+  All biblical Hebrew text, in any format, may be viewed or copied [without restriction](https://www.tanach.us/License.html)
